@@ -8,5 +8,5 @@ jobs:
     - name: Convert MD to PDF
       uses: baileyjm02/markdown-to-pdf@v1.0.0
       with:
-        input_path: your-file.md
+        input_path: testing-report.md
         output_dir: pdfs/
