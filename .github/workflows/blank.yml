@@ -1,0 +1,12 @@
+name: Convert MD to PDF
+on: [push]
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Convert MD to PDF
+      uses: baileyjm02/markdown-to-pdf@v1.0.0
+      with:
+        input_path: your-file.md
+        output_dir: pdfs/
